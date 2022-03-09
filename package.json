@@ -1,0 +1,24 @@
+{
+  "name": "jsplate",
+  "version": "1.0.0",
+  "description": "Javascript templating engine, preprocessing js in markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfe84/jsplate.git"
+  },
+  "keywords": [
+    "markdown",
+    "template"
+  ],
+  "author": "cfe84",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cfe84/jsplate/issues"
+  },
+  "homepage": "https://github.com/cfe84/jsplate#readme",
+  "bin": "./bin/jsplate"
+}
