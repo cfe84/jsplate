@@ -1,4 +1,4 @@
-jsplate pre-processes javascript in Markdown files. It interprets code in js code blocks and inline variables and renders directly into md. Such as this:
+_jsplate_ pre-processes javascript in Markdown files. It interprets code in js code blocks and inline variables and renders directly into md. Such as this:
 
 ~~~
 
@@ -30,5 +30,6 @@ Have a nice day Madam!
 
 Additional details:
 - If you want to re-use variables between code blocks, be sure to declare them as global (not using `const`).
-- If you are allergic to global variables jsplate is also declaring a `global` object that you can enrich, for example using `global.x = "some value"`
+- If you are allergic to global variables, _jsplate_ is also declaring a `global` object that you can enrich, for example using `global.x = "some value"`
 - Blocks are evaluated in an async context, you can use `await`!
+- You can require modules, however make sure to require local modules using `process.cwd` instead of `./` (e.g. `require(process.cwd() + "/something.js")`)
